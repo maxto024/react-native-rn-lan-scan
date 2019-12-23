@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNRnLanScan } = NativeModules;
+const { RNRnLanScan,RNLanScanEvent } = NativeModules;
 
-export default RNRnLanScan;
+export  {RNRnLanScan,RNLanScanEvent};
