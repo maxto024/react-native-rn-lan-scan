@@ -3,6 +3,11 @@
   "name": "react-native-rn-lan-scan",
   "version": "1.0.0",
   "description": "",
+  "author": {
+    "email": "maxto024@gmail.com",
+    "name": "Krzysztof Magiera"
+  },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +15,6 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
   "devDependencies": {
     "react-native": "^0.41.2"
   },
