@@ -1,11 +1,11 @@
 
 {
   "name": "react-native-rn-lan-scan",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "React Native Lan Scan",
   "author": {
     "email": "maxto024@gmail.com",
-    "name": "Krzysztof Magiera"
+    "name": "Mohamed Elmi Hassan"
   },
   "license": "MIT",
   "main": "index.js",
