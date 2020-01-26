@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53AB383223B0C8BD00D0879C /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AB382323B0C89400D0879C /* libReact.a */; };
 		53AB384023B0EF3900D0879C /* RNLanScanEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB383F23B0EF3900D0879C /* RNLanScanEvent.m */; };
+		53AB384323B1744300D0879C /* data.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53AB384223B1744300D0879C /* data.plist */; };
 		B3E7B58A1CC2AC0600A0062D /* RNRnLanScan.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNRnLanScan.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				53AB384323B1744300D0879C /* data.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,7 @@
 		53AB383D23B0D28600D0879C /* MMLanScan */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MMLanScan; path = ../../MMLanScan/MMLanScan; sourceTree = "<group>"; };
 		53AB383F23B0EF3900D0879C /* RNLanScanEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNLanScanEvent.m; sourceTree = "<group>"; };
 		53AB384123B0EF7000D0879C /* RNLanScanEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNLanScanEvent.h; sourceTree = "<group>"; };
+		53AB384223B1744300D0879C /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = data.plist; path = MMLanScan/Data/data.plist; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNRnLanScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNRnLanScan.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNRnLanScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRnLanScan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +142,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				53AB384223B1744300D0879C /* data.plist */,
 				53AB384123B0EF7000D0879C /* RNLanScanEvent.h */,
 				53AB383F23B0EF3900D0879C /* RNLanScanEvent.m */,
 				53AB383D23B0D28600D0879C /* MMLanScan */,
