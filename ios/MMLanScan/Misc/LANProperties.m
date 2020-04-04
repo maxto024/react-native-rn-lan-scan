@@ -102,23 +102,27 @@
     
     int errorStatus = getaddrinfo([ipAddress cStringUsingEncoding:NSASCIIStringEncoding], NULL, &hints, &result);
     if (errorStatus != 0) {
+         NSLog(@"hostname error:- %@ ", errorStatus );
         return nil;
     }
     
     CFDataRef addressRef = CFDataCreate(NULL, (UInt8 *)result->ai_addr, result->ai_addrlen);
     if (addressRef == nil) {
+          NSLog(@"hostname addressRef:- %@ ", addressRef );
         return nil;
     }
     freeaddrinfo(result);
     
     CFHostRef hostRef = CFHostCreateWithAddress(kCFAllocatorDefault, addressRef);
     if (hostRef == nil) {
+                NSLog(@"hostname addressRef:- %@ ", hostRef );
         return nil;
     }
     CFRelease(addressRef);
     
     BOOL succeeded = CFHostStartInfoResolution(hostRef, kCFHostNames, NULL);
     if (!succeeded) {
+                NSLog(@"hostname success:- %@ ", succeeded );
         return nil;
     }
     
@@ -128,7 +132,7 @@
     for (int currentIndex = 0; currentIndex < [(__bridge NSArray *)hostnamesRef count]; currentIndex++) {
         [hostnames addObject:[(__bridge NSArray *)hostnamesRef objectAtIndex:currentIndex]];
     }
-    
+               NSLog(@"hostname 0:- %@  %@  ", hostnames[0] );
     return hostnames[0];
 }
 

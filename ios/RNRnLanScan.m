@@ -118,7 +118,7 @@ RCT_EXPORT_METHOD(getModuleList: (RCTResponseSenderBlock)callback)
     if (![connectedDevicesMutable containsObject:device]) {
         NSMutableArray *nDevices = [[NSMutableArray alloc] initWithObjects:device.ipAddress,device.brand,device.macAddress,device.isLocalDevice,device.macAddress,device.subnetMask, nil];
           
-             NSLog(@"Brand: %@",device.brand);
+            NSLog(@"Ip:- %@ brand:-%@ mac:-%@ hostname:-%@", device.ipAddress, device.brand,device.macAddress, device.hostname  );
         
         RNLanScanEvent *manager = [RNLanScanEvent allocWithZone: nil];
           [manager onNewDeviceFind:nDevices];
